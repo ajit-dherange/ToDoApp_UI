@@ -21,9 +21,9 @@ cd /path/to/your/project
 ```
 2. Build the Docker image: Use the docker build command to build the Docker image. Make sure you're in the same directory as the Dockerfile.
 ```
-docker build -t your-image-name .
+$ docker build -t your-image-name .
 
-Replace your-image-name with the name you want for your image.
+Replace your-image-name with the name you want for your image. EX: docker build -t todoapp .
 The . at the end specifies the current directory as the build context. If your Dockerfile is located elsewhere, replace . with the appropriate path.
 ```
 3. Verify the image: Once the build is complete, you can check if the image was created successfully using the docker images command:
@@ -37,7 +37,7 @@ This will list all the Docker images on your local machine, including the one yo
 docker run -p 3000:3000 your-image-name
 
 The -p 3000:3000 flag maps port 3000 on your local machine to port 3000 inside the container. Modify these port numbers if your application uses different ports.
-Replace your-image-name with the actual name you assigned to the image.
+Replace your-image-name with the actual name you assigned to the image. EX: docker run -p 3000:3000 todoapp
 Access the Node.js application: If the Node.js application is running on port 3000, you can access it at http://localhost:3000 in your browser or API client.
 ```
 ### Summary of commands:
@@ -46,11 +46,13 @@ Access the Node.js application: If the Node.js application is running on port 30
 cd /path/to/your/project
 
 # Build the Docker image
-docker build -t your-image-name .
+docker build -t todoapp .
 
 # Verify the image is created
 docker images
 
 # Run the Docker container
-docker run -p 3000:3000 your-image-name
+docker run -p 3000:3000 todoapp
+or
+docker run -P --name todoapp-con todoapp
 ```
