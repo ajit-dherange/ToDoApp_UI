@@ -1,7 +1,7 @@
 # ToDoApp_UI
 ToDoApp_UI (Nodejs)
 
-## Getting Started with Create React App (For Webservice)
+## Getting Started with Create React App (For EC2)
 
 This project was bootstrapped with Create React App.
 
@@ -11,7 +11,7 @@ This project was bootstrapped with Create React App.
 4. RUn npm run build
 5. Copy the Generated artifacts in nginx server
 
-## Create container image (docker file is already present with codes)
+## Create container image (for Kubernates ... docker file is present with codes)
 
 To create a Docker container image from your Node.js code, assuming you already have the Dockerfile in place, follow these steps:
 
