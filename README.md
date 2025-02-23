@@ -11,7 +11,7 @@ This project was bootstrapped with Create React App.
 4. RUn npm run build
 5. Copy the Generated artifacts in nginx server
 
-## create container image from nodejs code , docker file is already present with code
+## Create container image (docker file is already present with codes)
 
 To create a Docker container image from your Node.js code, assuming you already have the Dockerfile in place, follow these steps:
 
